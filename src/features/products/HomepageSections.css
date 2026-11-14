@@ -1,0 +1,18 @@
+/* Homepage enhancements for 999+ KART */
+.header-search{display:flex;align-items:center;gap:8px;width:min(260px,24vw);min-width:150px;padding:9px 12px;border:1px solid #eeeaf0;border-radius:24px;color:#815394;background:#fff}
+.header-search input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:#201b24;font-size:12px}
+.header-search input:focus-visible{outline:0}
+.header-search button{width:20px;height:20px;display:grid;place-items:center;border:0;background:transparent;color:#815394}
+.category-card{width:100%;border:0;text-align:left;cursor:pointer}
+.category-card small{display:flex;align-items:center;gap:4px}
+.homepage-shelf{padding-top:42px;padding-bottom:30px}
+.homepage-product-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.homepage-mini-product{min-width:0;display:flex;flex-direction:column;gap:9px;padding:0 0 13px;border:1px solid #eeeaf0;border-radius:8px;overflow:hidden;background:#fff;text-align:left;color:#201b24;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease}
+.homepage-mini-product:hover{transform:translateY(-3px);box-shadow:0 10px 28px #39105312}
+.homepage-mini-product img,.mini-no-image{width:100%;height:190px;object-fit:cover;background:#f3eff5}
+.mini-no-image{display:grid;place-items:center;color:#391053;font-weight:800}
+.homepage-mini-product strong,.homepage-mini-product>span:not(.mini-no-image){margin:0 13px;font-size:12px}
+.homepage-mini-product>span:not(.mini-no-image){color:#713d88;font-weight:700}
+.clear-category-filter{display:inline-flex;align-items:center;gap:7px;margin:0 0 18px;padding:8px 12px;border:1px solid #d9c8e2;border-radius:20px;background:#fff;color:#391053;font-size:11px;font-weight:700}
+@media(max-width:900px){.homepage-product-row{grid-template-columns:repeat(2,minmax(0,1fr))}.header-search{width:190px}}
+@media(max-width:600px){.header-search{width:36px;min-width:36px;padding:9px;justify-content:center;border:0}.header-search input{width:0;display:none}.header-search:focus-within{position:absolute;left:5%;right:5%;top:75px;z-index:30;width:90%;padding:12px;background:#fff;border:1px solid #eeeaf0;box-shadow:0 8px 25px #39105318}.header-search:focus-within input{display:block;width:100%}.homepage-shelf{padding-top:28px;padding-bottom:20px}.homepage-product-row{gap:10px}.homepage-mini-product img,.mini-no-image{height:145px}.homepage-mini-product strong,.homepage-mini-product>span:not(.mini-no-image){margin:0 9px;font-size:11px}}

@@ -1,0 +1,22 @@
+
+/* Automatic category suggestion */
+.category-ai-suggestion {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 9px;
+  padding: 11px 12px;
+  border: 1px solid #d9c9e8;
+  border-radius: 10px;
+  background: #faf7fd;
+  color: #391053;
+}
+.category-ai-suggestion strong {
+  font-size: 13px;
+  font-weight: 700;
+}
+.category-ai-suggestion small {
+  color: #6d5a78;
+  font-size: 12px;
+  line-height: 1.45;
+}

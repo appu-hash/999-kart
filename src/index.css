@@ -1,0 +1,190 @@
+
+/* =================================
+   999+ KART - GLOBAL STYLES
+================================= */
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+
+  --primary: #391053;
+  --primary-light: #5a2675;
+  --secondary: #9d72b3;
+  --accent: #c9a8f1;
+
+  --text-dark: #24132e;
+  --text-muted: #716a76;
+
+  --background: #ffffff;
+  --background-soft: #f8f5fa;
+  --border: #eeeaf0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: var(--text-dark);
+  background: var(--background);
+}
+
+/* =================================
+   RESET
+================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--background);
+  color: var(--text-dark);
+  font-family: 'DM Sans', sans-serif;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+/* =================================
+   TYPOGRAPHY
+================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Manrope', sans-serif;
+  color: var(--text-dark);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(40px, 6vw, 76px);
+  letter-spacing: -3px;
+  margin: 0;
+}
+
+h2 {
+  font-size: clamp(26px, 3vw, 35px);
+  letter-spacing: -1.5px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+span {
+  line-height: inherit;
+}
+
+/* =================================
+   LINKS
+================================= */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =================================
+   BUTTONS
+================================= */
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 4px;
+}
+
+/* =================================
+   IMAGES
+================================= */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =================================
+   FORM ELEMENTS
+================================= */
+
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* =================================
+   SELECTION
+================================= */
+
+::selection {
+  background: var(--accent);
+  color: var(--primary);
+}
+
+/* =================================
+   SCROLLBAR
+================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f5fa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b69ac7;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #815394;
+}
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1024px) {
+  html {
+    scroll-padding-top: 75px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    letter-spacing: -2px;
+  }
+}

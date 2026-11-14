@@ -1,0 +1,12 @@
+﻿node_modules/
+dist/
+.env
+.env.*
+!.env.example
+
+supabase/.temp/
+
+*.bak
+
+999+Kart/
+999kart-admin-categories/

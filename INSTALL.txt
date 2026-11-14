@@ -1,0 +1,20 @@
+999+ KART SUBCATEGORY + SMART MATCHING UPGRADE
+
+DATABASE
+The parent_category_id column and 56 subcategories have already been added to your linked Supabase project. Do not rerun a separate schema script.
+
+FILES
+1. Back up your existing files.
+2. Replace src/features/admin/pages/AdminCategories.tsx and AdminCategories.css with the files in this ZIP.
+3. Replace src/features/admin/pages/AdminProducts.tsx with the file in this ZIP.
+4. Keep your existing AdminProducts.css. The existing category suggestion styles remain in use.
+5. Run: npm.cmd run dev
+6. Refresh /admin/categories. Main categories and subcategories will appear in the same list.
+7. In Add/Edit Category, choose a Parent category to create a subcategory. Leave Parent category as None for a main category.
+8. In Add Product, the category dropdown groups subcategories under their parent. The rule-based matcher now includes subcategory keywords.
+
+IMPORTANT
+- Products should normally be assigned to a subcategory. The parent is shown as an optgroup label.
+- Existing products and orders are not modified.
+- Suggestions are keyword/rule-based, not AI. Ambiguous products should be reviewed manually.
+- This supports one subcategory level under each main category.

@@ -1,0 +1,74 @@
+
+/* Compact product preview inside each dashboard order card */
+.customer-order-product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 12px;
+}
+
+.customer-order-product-mini {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  max-width: 240px;
+  padding: 6px 9px 6px 6px;
+  border: 1px solid rgba(57, 16, 83, 0.12);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.customer-order-product-mini img,
+.customer-order-product-placeholder {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  border-radius: 7px;
+  object-fit: cover;
+  background: #f4eff8;
+}
+
+.customer-order-product-placeholder {
+  display: grid;
+  place-items: center;
+  color: #5a2675;
+}
+
+.customer-order-product-copy {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 3px;
+}
+
+.customer-order-product-copy strong {
+  overflow: hidden;
+  max-width: 175px;
+  color: #391053;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.customer-order-product-copy small {
+  overflow: hidden;
+  max-width: 175px;
+  color: #777080;
+  font-size: 9px;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .customer-order-product-list {
+    gap: 6px;
+  }
+
+  .customer-order-product-mini {
+    max-width: 100%;
+  }
+}

@@ -106,9 +106,9 @@ export default function AdminLogin({ onLogin }: AdminLoginProps) {
           Restricted access · Authorized administrators only
         </p>
 
-        <a href="/" className="admin-back-link">
-          ← Back to storefront
-        </a>
+       <a href="/account" className="admin-back-link">
+  ← Customer Login
+</a>
       </div>
     </div>
   );
